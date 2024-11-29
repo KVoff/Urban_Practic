@@ -13,11 +13,6 @@ def add_moving_average(data, window_size=5):
 
 
 def calculate_and_display_average_price(data):
-    """
-    Вычисляет и выводит среднюю цену закрытия акций за указанный период.
-
-    :param data: DataFrame с биржевыми данными, содержащими колонку 'Close'.
-    """
     if 'Close' in data:
         average_price = data['Close'].mean()
         print(f"Средняя цена закрытия за период: {average_price:.2f}")
